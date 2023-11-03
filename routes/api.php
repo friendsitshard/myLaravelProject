@@ -27,3 +27,5 @@ Route::get('/first/{number}', function(){
 Route::post('/create', [AuthController::class, 'register']);
 
 Route::post('/uploadImg', [ImgController::class, 'uploadImg']);
+
+Route::post('/notifProduct', [NotificationController::class, 'store']);
